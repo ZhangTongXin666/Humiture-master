@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">采集温湿度</string>
+
+    <string name="allEmpty">请输入用户名和密码</string>
+    <string name="usernameEmpty">用户名为空</string>
+    <string name="passwordEmpty">密码为空</string>
+    <string name="usernameNoExist">用户名不存在</string>
+    <string name="passwordNoSure">密码不正确</string>
+    <string name="permission_require_desc">为保证完程序正常运行，需要开启以下权限。\n</string>
+    <string name="permission_setting_desc">\n如需再次开启权限，请在设置页面中开启</string>
+    <string name="cancle">取消</string>
+    <string name="query">查询</string>
+    <string name="humidity">湿度（单位：%）</string>
+    <string name="temperature">温度（单位：℃）</string>
+    <string name="temperatureMax">温度最大值</string>
+    <string name="temperatureMin">温度最小值</string>
+    <string name="temperatureAvg">温度平均值</string>
+    <string name="dataNo">暂无数据</string>
+    <string name="temperatureBelow">室内温度低于18℃的用户</string>
+</resources>

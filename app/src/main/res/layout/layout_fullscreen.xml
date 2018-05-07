@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/view_title"/>
+<FrameLayout
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lv_lineChat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.github.mikephil.charting.charts.LineChart>
+    <TextView
+        android:textSize="15dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="11月1日-次年3月"
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</FrameLayout>
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:textColor="@color/gray"
+            android:background="@color/text_black"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:onClick="onViewClicked"
+            android:id="@+id/bt_upPage"
+            android:text="首页"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:textColor="@color/gray"
+            android:background="@color/text_black"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:onClick="onViewClicked"
+            android:id="@+id/bt_nextPage"
+            android:text="尾页"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>

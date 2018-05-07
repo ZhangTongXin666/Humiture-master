@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:elevation="15dp"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/item_record_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="5dp"
+            android:background="@drawable/all_white_width"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:text="危情预警:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/iv_below"
+            android:src="@drawable/below_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/tv_below"
+            android:layout_marginLeft="2dp"
+            android:text="10.12℃"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_data"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:text="2017-12-27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:text="12:12:12"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:id="@+id/id_timePoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="5dp"
+            android:background="@drawable/all_white_width"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:text="用户位置:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginRight="10dp"
+            android:id="@+id/tv_location"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:text="高新区 瑞麟轩"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_belowAddress"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:text="五号楼 2单元 102室"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

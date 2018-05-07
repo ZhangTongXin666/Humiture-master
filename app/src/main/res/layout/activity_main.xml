@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent" >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/mainBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:elevation="10dp"
+        android:background="@drawable/item_record_bg"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:visibility="invisible"
+            android:onClick="onViewClicked"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/iv_back"
+            android:src="@drawable/back_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_centerInParent="true"
+            android:text="采集温湿度"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/ll_user"
+        android:layout_marginBottom="10dp"
+        android:elevation="5dp"
+        android:onClick="onViewClicked"
+        android:background="@drawable/item_record_bg"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/home"
+            android:scaleType="centerCrop"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp" />
+        <TextView
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="查看指定用户室内温湿度"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:onClick="onViewClicked"
+        android:id="@+id/ll_block"
+        android:layout_marginBottom="10dp"
+        android:elevation="5dp"
+        android:background="@drawable/item_record_bg"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/block"
+            android:scaleType="centerCrop"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp" />
+        <TextView
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="查看指定小区室内温度"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_heatingtime_user"
+        android:layout_marginBottom="10dp"
+        android:elevation="5dp"
+        android:onClick="onViewClicked"
+        android:background="@drawable/item_record_bg"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/statistics"
+            android:scaleType="centerCrop"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp" />
+        <TextView
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="查看指定用户供暖期温度统计"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:id="@+id/ll_click"
+        android:elevation="5dp"
+        android:background="@drawable/all_white_width"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/select_dialog_bt_bg"
+            android:text="查看消息"
+            android:onClick="onViewClicked"
+            android:id="@+id/bt_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/bt_outHome"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/select_dialog_bt_bg"
+            android:text="室外温湿度"
+            android:onClick="onViewClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

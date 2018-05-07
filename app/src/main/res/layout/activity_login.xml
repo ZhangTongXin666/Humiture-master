@@ -1,0 +1,199 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBg"
+    tools:context=".activity.LoginActivity" >
+
+    <ViewStub
+        android:layout="@layout/activity_login"
+        android:inflatedId="@+id/layout_id"
+        android:id="@+id/id_timePoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="65dip"
+            android:layout_height="65dip"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo_circular" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center"
+            android:text="室内温湿度采集系统"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="掌握你的空间——每时每刻"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip"
+            android:background="@drawable/radius_drawable_bg"
+            android:orientation="vertical"
+            android:padding="10dip"
+            android:id="@+id/input_layout"
+            >
+
+
+
+            <LinearLayout
+                android:id="@+id/input_layout_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/paw_code" />
+
+                <soul.listener.com.humiture.view.EditTextWithClear
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dip"
+                    android:background="#00000000"
+                    android:hint="账号"
+                    android:padding="5dip"
+                    android:textSize="16sp"
+                    android:id="@+id/etUsername"/>
+            </LinearLayout>
+            <View
+                android:id="@+id/id_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:background="#eeeeee" />
+
+            <LinearLayout
+                android:id="@+id/input_layout_psw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/paw_left" />
+
+                <soul.listener.com.humiture.view.PasswordEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dip"
+                    android:background="#00000000"
+                    android:hint="密码"
+                    android:inputType="textPassword"
+                    android:padding="5dip"
+                    android:textSize="16sp"
+                    android:id="@+id/etPassword"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/input_layout_phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/phonenumber_icon" />
+                <soul.listener.com.humiture.view.EditTextWithClear
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:inputType="phone"
+                    android:layout_marginLeft="10dip"
+                    android:background="#00000000"
+                    android:hint="手机号"
+                    android:padding="5dip"
+                    android:textSize="16sp"
+                    android:id="@+id/et_phoneNumber"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/layout_progress"
+            android:layout_width="match_parent"
+            android:layout_height="130dip"
+            layout="@layout/layout_progress"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/btLogin"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/input_layout"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/select_login_bg"
+            android:gravity="center"
+            android:paddingBottom="2dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="2dip"
+            android:text="登录"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <soul.listener.com.humiture.view.OwlView
+        android:id="@+id/owl_view"
+        android:layout_width="175dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="162dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:padding="5dp"
+        android:background="@drawable/select_login_bg"
+        android:onClick="onViewClicked"
+        android:textSize="16sp"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:id="@+id/tv_userLogin"
+        android:text="用户登录"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:padding="5dp"
+        android:background="@drawable/select_login_bg"
+        android:onClick="onViewClicked"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/tv_managerLogin"
+        android:text="管理员登录"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

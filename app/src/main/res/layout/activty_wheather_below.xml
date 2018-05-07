@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_future"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/rl_today"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10dp"
+    android:alpha="0.4"
+    android:background="@drawable/wheather_background">
+
+    <LinearLayout
+        android:id="@+id/ll_day1"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_today"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:text="今天"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_day1_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="星期天"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day1_high"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="最高5°C"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day1_low"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="最低-10°C"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day1_type1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="晴"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day1_fengxaing1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="北风"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day1_fengli1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="3级"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day1_type2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="阴"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day1_fengxiang2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="北风"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day1_fengli2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="2级"
+            android:textColor="@color/shallow_black" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_day2"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/ll_day1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_day2_tomorrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:text="明天"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_day2_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="星期天"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day2_high"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="最高5°C"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day2_low"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="最低-10°C"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day2_type1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="晴"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day2_fengxiang1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="北风"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day2_fengli1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="3级"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day2_type2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="阴"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day2_fengxiang2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="北风"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day2_fengli2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="2级"
+            android:textColor="@color/shallow_black" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_day3"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/ll_day2"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_day3_tomorrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:text="后天"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_day3_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="星期天"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day3_high"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="最高5°C"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day3_low"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="最低-10°C"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day3_type1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="晴"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day3_fengxaing1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="北风"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day3_fengli1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="3级"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day3_type2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="阴"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day3_fengxiang2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="北风"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day3_fengli2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="2级"
+            android:textColor="@color/shallow_black" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_day4"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/ll_day3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_day4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:text="大后天"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_day4_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="星期天"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day4_high"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="最高5°C"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day4_low"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="最低-10°C"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day4_type1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="晴"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day4_fengxaing1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="北风"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day4_fengli1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="3级"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day4_type2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="阴"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day4_fengxiang2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="北风"
+            android:textColor="@color/shallow_black" />
+
+        <TextView
+            android:id="@+id/tv_day4_fengli2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="2级"
+            android:textColor="@color/shallow_black" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="130dp"
+        android:text="日间"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="210dp"
+        android:text="夜间"
+        android:textColor="@color/black" />
+
+
+</RelativeLayout>
